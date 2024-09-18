@@ -1,0 +1,36 @@
+<!-- PREF FORM -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Preferences</title>
+</head>
+
+<body onload="onInit()">
+    <header>
+        <h1>My Personal Preferences</h1>
+    </header>
+    <main>
+        <form onsubmit="onFormSubmit(event)">
+            <!-- WHAT DO I PUT HERE? -->
+            <!-- HOW DO I SAVE MY FORM IN THE LOCAL STORAGE? -->
+            <section>
+                <label for="email">E-mail:</label>
+                <input class="email-container" type="email" name="email" id="email" />
+            </section>
+            <section>
+                <label for="color">Favorite color:</label>
+                <input type="color" id="color" name="color" value="#d1d1ff" /> <br />
+            </section>
+            <button>Submit Form</button>
+        </form>
+    </main>
+    <script src="js/services/utilService.js"></script>
+    <script src="js/services/userService.js"></script>
+    <script src="js/controller/user.controller.js"></script>
+</body>
+
+</html>
