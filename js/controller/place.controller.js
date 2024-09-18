@@ -2,6 +2,7 @@
 
 function onInit() {
     setBgc()
+    initMap()
     renderPlaces()
 }
 
