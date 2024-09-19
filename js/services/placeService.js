@@ -40,3 +40,17 @@ async function initMap() {
   })
 }
 
+function getPlaces() {
+    gPlaces = loadFromStorage('places')
+}
+
+function removePlace(placeId){
+    gPlaces = gPlaces.filter(place => place.id !== placeId)
+    saveToStorage('places', gPlaces)
+}
+
+function addPlace(name, lat, lng, zoom) {gPlaces.push({name,lat,lng, zoom})}
+
+function getPlaceById(placeId) {}
+function _createPlace(name, lat, lng, zoom) {}
+function _createPlaces() {}

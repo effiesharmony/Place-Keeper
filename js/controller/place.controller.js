@@ -15,6 +15,6 @@ function renderPlaces() {
 }
 
 function onRemovePlace(placeId) {
-    gPlaces = gPlaces.filter(place => place.id !== placeId)
+    removePlace(placeId)
     renderPlaces()
 }
